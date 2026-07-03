@@ -38,8 +38,11 @@ Players.PlayerAdded:Connect(function(player)
         return c + 100
     end)
 end)
+```
 
 ### Client
+``` lua
+
 local AllieService = require(ReplicatedStorage.Packages.AllieService).client
 
 AllieService:init()
@@ -50,3 +53,4 @@ AllieService:getChangedSignal("coins"):Connect(function(new, old)
     print("Coins:", old, "->", new)
     coinsLabel.Text = tostring(new)
 end)
+```
