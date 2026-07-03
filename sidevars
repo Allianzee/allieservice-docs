@@ -1,0 +1,69 @@
+import type { SidebarsConfig } from "@docusaurus/plugin-content-docs";
+
+const sidebars: SidebarsConfig = {
+  docsSidebar: [
+    {
+      type: "doc",
+      id: "intro",
+      label: "Introduction",
+    },
+    {
+      type: "category",
+      label: "Setup",
+      collapsed: false,
+      items: [
+        "setup/installation",
+        "setup/configuration",
+        "setup/data-template",
+      ],
+    },
+    {
+      type: "category",
+      label: "Server",
+      collapsed: false,
+      items: [
+        "server/init",
+        "server/get-set",
+        "server/update",
+        "server/arrays",
+        "server/signals",
+        "server/player-lifecycle",
+        "server/profiles",
+      ],
+    },
+    {
+      type: "category",
+      label: "Client",
+      collapsed: false,
+      items: [
+        "client/init",
+        "client/get-set",
+        "client/update",
+        "client/arrays",
+        "client/signals",
+        "client/fetch",
+      ],
+    },
+    {
+      type: "category",
+      label: "Guides",
+      collapsed: false,
+      items: [
+        "guides/paths",
+        "guides/global-messages",
+        "guides/best-practices",
+      ],
+    },
+    {
+      type: "category",
+      label: "API Reference",
+      collapsed: false,
+      items: [
+        "api/server-api",
+        "api/client-api",
+      ],
+    },
+  ],
+};
+
+export default sidebars;
